@@ -2,6 +2,7 @@ import Sidebar from "@/components/layout/Sidebar";
 import Header from "@/components/layout/Header";
 import StatsCard from "@/components/dashboard/StatsCard";
 import RecentTasks from "@/components/dashboard/RecentTasks";
+import CreateTaskButton from "@/components/dashboard/CreateTaskButton";
 
 const stats = [
   { title: "Total Tasks", count: 24, description: "All assigned tasks" },
@@ -16,7 +17,9 @@ export default function DashboardPage() {
 
       <div className="md:pl-64">
         <Header />
-
+        <div className="mt-5">
+          <CreateTaskButton />
+        </div>
         <main className="p-6 md:p-8">
           <div>
             <h1 className="text-2xl font-bold text-slate-900">
